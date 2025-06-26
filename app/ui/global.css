@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Catppuccin Macchiato base styles */
+@layer base {
+  html {
+    background-color: #24273a;
+    /* ctp-base */
+    color: #cad3f5;
+    /* ctp-text */
+  }
+
+  body {
+    background-color: #24273a;
+    /* ctp-base */
+    color: #cad3f5;
+    /* ctp-text */
+  }
+}
+
 input[type='number'] {
   -moz-appearance: textfield;
   appearance: textfield;
