@@ -5,7 +5,7 @@ import { lusitana } from '@/app/ui/fonts';
 import { LatestInvoice } from '@/app/lib/definitions';
 import { fetchLatestInvoices } from '@/app/lib/data';
 
-export default async function LatestInvoices() {
+export default async function LatestInvoices () {
   const latestInvoices: LatestInvoice[] = await fetchLatestInvoices();
 
   return (
@@ -24,16 +24,14 @@ export default async function LatestInvoices() {
                   {
                     'border-t': i !== 0,
                   },
-                )}
-              >
+                )}>
                 <div className="flex items-center">
                   <Image
                     src={invoice.image_url}
                     alt={`${invoice.name}'s profile picture`}
                     className="mr-4 rounded-full"
                     width={32}
-                    height={32}
-                  />
+                    height={32}/>
                   <div className="min-w-0">
                     <p className="truncate text-sm font-semibold md:text-base">
                       {invoice.name}
@@ -44,8 +42,7 @@ export default async function LatestInvoices() {
                   </div>
                 </div>
                 <p
-                  className={`${lusitana.className} truncate text-sm font-medium md:text-base`}
-                >
+                  className={`${lusitana.className} truncate text-sm font-medium md:text-base`}>
                   {invoice.amount}
                 </p>
               </div>

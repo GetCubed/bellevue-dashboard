@@ -5,7 +5,7 @@ import {
   FormattedCustomersTable,
 } from '@/app/lib/definitions';
 
-export default async function CustomersTable({
+export default async function CustomersTable ({
   customers,
 }: {
   customers: FormattedCustomersTable[];
@@ -24,8 +24,7 @@ export default async function CustomersTable({
                 {customers?.map((customer) => (
                   <div
                     key={customer.id}
-                    className="mb-2 w-full rounded-md bg-white p-4"
-                  >
+                    className="mb-2 w-full rounded-md bg-white p-4">
                     <div className="flex items-center justify-between border-b pb-4">
                       <div>
                         <div className="mb-2 flex items-center">
@@ -35,8 +34,7 @@ export default async function CustomersTable({
                               className="rounded-full"
                               alt={`${customer.name}'s profile picture`}
                               width={28}
-                              height={28}
-                            />
+                              height={28}/>
                             <p>{customer.name}</p>
                           </div>
                         </div>
@@ -92,8 +90,7 @@ export default async function CustomersTable({
                             className="rounded-full"
                             alt={`${customer.name}'s profile picture`}
                             width={28}
-                            height={28}
-                          />
+                            height={28}/>
                           <p>{customer.name}</p>
                         </div>
                       </td>

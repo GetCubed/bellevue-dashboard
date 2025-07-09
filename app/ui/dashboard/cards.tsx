@@ -14,7 +14,7 @@ const iconMap = {
   invoices: InboxIcon,
 };
 
-export default async function CardWrapper() {
+export default async function CardWrapper () {
   const { totalPaidInvoices, totalPendingInvoices, numberOfInvoices, numberOfCustomers } = await fetchCardData();
 
   return (
@@ -27,7 +27,7 @@ export default async function CardWrapper() {
   );
 }
 
-export function Card({
+export function Card ({
   title,
   value,
   type,
@@ -46,8 +46,7 @@ export function Card({
       </div>
       <p
         className={`${lusitana.className}
-          truncate rounded-xl bg-white px-4 py-8 text-center text-2xl`}
-      >
+          truncate rounded-xl bg-white px-4 py-8 text-center text-2xl`}>
         {value}
       </p>
     </div>

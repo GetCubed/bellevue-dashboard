@@ -16,7 +16,7 @@ type Props = {
   searchParams?: SearchParamsPromise;
 };
 
-export default async function Page({ searchParams }: Props) {
+export default async function Page ({ searchParams }: Props) {
   const { query = '', page = '1' } = (await searchParams) || {};
   const currentPage = Number(page);
   const totalPages = await fetchInvoicesPages(query);
