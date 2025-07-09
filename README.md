@@ -1,4 +1,4 @@
-## Simple Dashboard app created with Next.js
+## Simple customer & invoice Dashboard app
 
 ## Features Demonstration
 
