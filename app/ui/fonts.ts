@@ -1,8 +1,8 @@
-import { Inter, Lusitana } from 'next/font/google';
+import { Inter, Parkinsans } from 'next/font/google';
 
 
 export const inter = Inter({ subsets: ['latin'] });
-export const lusitana = Lusitana({
+export const parkinsans = Parkinsans({
   subsets: ['latin'],
   weight: ['400', '700']
 });
