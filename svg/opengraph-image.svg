@@ -1,0 +1,17 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#24273A"/>
+
+  <!-- Decorative shapes -->
+  <circle cx="250" cy="400" r="220" fill="#8AADF4" opacity="0.8"/>
+  <circle cx="950" cy="250" r="180" fill="#A6DA95" opacity="0.8"/>
+
+  <!-- Accent elements -->
+  <circle cx="580" cy="315" r="60" fill="#F5BDE6"/>
+  <circle cx="300" cy="150" r="40" fill="#F0C6C6"/>
+  <circle cx="1000" cy="500" r="30" fill="#91D7E3"/>
+
+  <!-- New Jazz Cup-inspired pattern -->
+  <path d="M0 150 C400 50 800 250 1200 50" fill="none" stroke="#A6DA95" stroke-width="30" stroke-linecap="round"/>
+  <path d="M0 500 C400 600 800 400 1200 600" fill="none" stroke="#F5BDE6" stroke-width="30" stroke-linecap="round"/>
+</svg>
