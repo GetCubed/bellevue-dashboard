@@ -21,9 +21,12 @@ type Props = {
 };
 
 export default async function Page ({ searchParams }: Props) {
+  //simulate an error here to activate the error boundary
+  // throw new Error('This is a simulated error for testing purposes.');
+
   const { query = '', page = '1' } = (await searchParams) || {};
   const currentPage = Number(page);
-  const totalPages = await fetchInvoicesPages(query);
+  const totalPages = await fetchInvoicesPages(query)
 
   return (
     <div className="w-full">

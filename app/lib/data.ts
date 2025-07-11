@@ -13,7 +13,7 @@ const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
 export async function fetchRevenue () {
   // Simulate a delay to mimic a real-world scenario where data fetching might take time
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 1500));
 
   try {
     const data = await sql<Revenue[]>`SELECT * FROM revenue`;
@@ -29,7 +29,7 @@ export async function fetchRevenue () {
 
 export async function fetchLatestInvoices () {
   //simulate a delay to mimic a real-world scenario where data fetching might take time
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 1500));
 
   try {
     const data = await sql<LatestInvoiceRaw[]>`
@@ -52,7 +52,7 @@ export async function fetchLatestInvoices () {
 
 export async function fetchCardData () {
   // Simulate a delay to mimic a real-world scenario where data fetching might take time
-  await new Promise((resolve) => setTimeout(resolve, 3000));
+  await new Promise((resolve) => setTimeout(resolve, 1500));
 
   try {
     // You can probably combine these into a single SQL query

@@ -13,7 +13,7 @@ export default async function LatestInvoices () {
         Latest Invoices
       </h2>
       <div className="flex grow flex-col justify-between rounded-xl bg-surface1 p-4">
-        <div className="bg-surface0 px-6">
+        <div className="rounded-md bg-surface0 px-6">
           {latestInvoices.map((invoice, i) => {
             return (
               <div
@@ -48,7 +48,7 @@ export default async function LatestInvoices () {
           })}
         </div>
         <div className="flex items-center pb-2 pt-6">
-          <ArrowPathIcon className="h-5 w-5 text-subtext0" />
+          <ArrowPathIcon className="size-5 text-subtext0" />
           <h3 className="ml-2 text-sm text-subtext0 ">Updated just now</h3>
         </div>
       </div>

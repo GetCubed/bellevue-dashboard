@@ -11,11 +11,11 @@ export default function Page () {
       <div className="mt-4 flex grow flex-col gap-4 md:flex-row">
         <div className="flex flex-col justify-center gap-6 rounded-lg bg-surface1 px-6 py-10 md:w-2/5 md:px-20">
           {/* Removed inter.className from the paragraphs */}
-          <p className="antialiased text-xl md:text-3xl md:leading-normal">
-            <strong>Bellevue Dash</strong>
+          <p className="text-xl antialiased md:text-3xl md:leading-normal">
+            <strong>Bellevue</strong>
           </p>
-          <p className="antialiased text-xl md:text-3xl md:leading-normal">
-            your dashboard for managing invoices, customers, and payments.
+          <p className="text-xl antialiased md:text-3xl md:leading-normal">
+            Your dashboard for managing invoices, customers, and payments.
           </p>
           <Link
             href="/login"

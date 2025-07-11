@@ -1,13 +1,13 @@
 // Loading animation
 export const shimmer =
-  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-overlay1/40 before:to-transparent';
+  'before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-overlay1/40 before:to-transparent rounded-xl';
 
 export function CardSkeleton () {
   return (
     <div
       className={`${shimmer} relative overflow-hidden rounded-xl bg-surface1 p-2 shadow-sm`}>
       <div className="flex p-4">
-        <div className="h-5 w-5 rounded-md bg-surface2" />
+        <div className="size-5 rounded-md bg-surface2" />
         <div className="ml-2 h-6 w-16 rounded-md bg-surface2 text-sm font-medium" />
       </div>
       <div className="flex items-center justify-center truncate rounded-xl bg-surface0 px-4 py-8">
@@ -33,9 +33,9 @@ export function RevenueChartSkeleton () {
     <div className={`${shimmer} relative w-full overflow-hidden md:col-span-4`}>
       <div className="mb-4 h-8 w-36 rounded-md bg-surface1" />
       <div className="rounded-xl bg-surface1 p-4">
-        <div className="sm:grid-cols-13 mt-0 grid h-[410px] grid-cols-12 items-end gap-2 rounded-md bg-surface0 p-4 md:gap-4" />
+        <div className="mt-0 grid h-[410px] grid-cols-12 items-end gap-2 rounded-md bg-surface0 p-4 sm:grid-cols-13 md:gap-4" />
         <div className="flex items-center pb-2 pt-6">
-          <div className="h-5 w-5 rounded-full bg-surface2" />
+          <div className="size-5 rounded-full bg-surface2" />
           <div className="ml-2 h-4 w-20 rounded-md bg-surface2" />
         </div>
       </div>
@@ -47,7 +47,7 @@ export function InvoiceSkeleton () {
   return (
     <div className="flex flex-row items-center justify-between border-b border-overlay0 py-4">
       <div className="flex items-center">
-        <div className="mr-2 h-8 w-8 rounded-full bg-surface2" />
+        <div className="mr-2 size-8 rounded-full bg-surface2" />
         <div className="min-w-0">
           <div className="h-5 w-40 rounded-md bg-surface2" />
           <div className="mt-2 h-4 w-12 rounded-md bg-surface2" />
@@ -72,7 +72,7 @@ export function LatestInvoicesSkeleton () {
           <InvoiceSkeleton />
         </div>
         <div className="flex items-center pb-2 pt-6">
-          <div className="h-5 w-5 rounded-full bg-surface2" />
+          <div className="size-5 rounded-full bg-surface2" />
           <div className="ml-2 h-4 w-20 rounded-md bg-surface2" />
         </div>
       </div>
@@ -105,31 +105,31 @@ export function TableRowSkeleton () {
       {/* Customer Name and Image */}
       <td className="relative overflow-hidden whitespace-nowrap py-3 pl-6 pr-3">
         <div className="flex items-center gap-3">
-          <div className="h-8 w-8 rounded-full bg-surface1"></div>
+          <div className="size-8 rounded-full bg-surface1"></div>
           <div className="h-6 w-24 rounded bg-surface1"></div>
         </div>
       </td>
       {/* Email */}
-      <td className="whitespace-nowrap px-3 py-3">
+      <td className="whitespace-nowrap p-3">
         <div className="h-6 w-32 rounded bg-surface1"></div>
       </td>
       {/* Amount */}
-      <td className="whitespace-nowrap px-3 py-3">
+      <td className="whitespace-nowrap p-3">
         <div className="h-6 w-16 rounded bg-surface1"></div>
       </td>
       {/* Date */}
-      <td className="whitespace-nowrap px-3 py-3">
+      <td className="whitespace-nowrap p-3">
         <div className="h-6 w-16 rounded bg-surface1"></div>
       </td>
       {/* Status */}
-      <td className="whitespace-nowrap px-3 py-3">
+      <td className="whitespace-nowrap p-3">
         <div className="h-6 w-16 rounded bg-surface1"></div>
       </td>
       {/* Actions */}
       <td className="whitespace-nowrap py-3 pl-6 pr-3">
         <div className="flex justify-end gap-3">
-          <div className="h-[38px] w-[38px] rounded bg-surface1"></div>
-          <div className="h-[38px] w-[38px] rounded bg-surface1"></div>
+          <div className="size-[38px] rounded bg-surface1"></div>
+          <div className="size-[38px] rounded bg-surface1"></div>
         </div>
       </td>
     </tr>
@@ -141,7 +141,7 @@ export function InvoicesMobileSkeleton () {
     <div className="mb-2 w-full rounded-md bg-surface0 p-4">
       <div className="flex items-center justify-between border-b border-overlay0 pb-8">
         <div className="flex items-center">
-          <div className="mr-2 h-8 w-8 rounded-full bg-surface1"></div>
+          <div className="mr-2 size-8 rounded-full bg-surface1"></div>
           <div className="h-6 w-16 rounded bg-surface1"></div>
         </div>
         <div className="h-6 w-16 rounded bg-surface1"></div>
@@ -152,8 +152,8 @@ export function InvoicesMobileSkeleton () {
           <div className="mt-2 h-6 w-24 rounded bg-surface1"></div>
         </div>
         <div className="flex justify-end gap-2">
-          <div className="h-10 w-10 rounded bg-surface1"></div>
-          <div className="h-10 w-10 rounded bg-surface1"></div>
+          <div className="size-10 rounded bg-surface1"></div>
+          <div className="size-10 rounded bg-surface1"></div>
         </div>
       </div>
     </div>

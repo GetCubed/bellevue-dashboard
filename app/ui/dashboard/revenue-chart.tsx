@@ -27,7 +27,7 @@ export default async function RevenueChart () {
 
 
       <div className="rounded-xl bg-surface1 p-4">
-        <div className="sm:grid-cols-13 mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-surface0 p-4 md:gap-4">
+        <div className="mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-surface0 p-4 sm:grid-cols-13 md:gap-4">
           <div
             className="mb-6 hidden flex-col justify-between text-sm text-overlay2 sm:flex"
             style={{ height: `${chartHeight}px` }}>
@@ -39,7 +39,7 @@ export default async function RevenueChart () {
           {revenue.map((month) => (
             <div key={month.month} className="flex flex-col items-center gap-2">
               <div
-                className="w-full rounded-md bg-blue"
+                className="w-full rounded-md bg-lavender"
                 style={{
                   height: `${(chartHeight / topLabel) * month.revenue}px`,
                 }}></div>
@@ -50,7 +50,7 @@ export default async function RevenueChart () {
           ))}
         </div>
         <div className="flex items-center pb-2 pt-6">
-          <CalendarIcon className="h-5 w-5 text-subtext0" />
+          <CalendarIcon className="size-5 text-subtext0" />
           <h3 className="ml-2 text-sm text-subtext0 ">Last 12 months</h3>
         </div>
       </div>

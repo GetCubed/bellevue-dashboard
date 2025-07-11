@@ -6,8 +6,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | Bellevue Dash',
-    default: 'Bellevue Dash',
+    template: '%s | Bellevue',
+    default: 'Bellevue',
   },
   description: 'The official Next.js Learn Dashboard built with App Router.',
   metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
@@ -20,7 +20,7 @@ export default function RootLayout ({
 }) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="antialiased bg-base0 text-text font-sans">{children}</body>
+      <body className="bg-base0 font-sans text-text antialiased">{children}</body>
     </html>
   );
 }
