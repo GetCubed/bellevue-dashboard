@@ -1,66 +1,66 @@
 {
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "next/core-web-vitals",
-    "next/typescript",
-    "plugin:tailwindcss/recommended"
-  ],
-  "plugins": [
-    "react",
-    "tailwindcss"
-  ],
-  "rules": {
-    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md 🔧
-    "import/no-duplicates": "error",
-    // // https://eslint.org/docs/latest/rules/object-curly-spacing 🔧
-    // "object-curly-spacing": [
-    //   "error",
-    //   "always" 
-    // ],
-    // // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md 🔧
-    // "react/jsx-closing-bracket-location": [
-    //   "error",
-    //   {
-    //     "nonEmpty": "after-props",
-    //     "selfClosing": "after-props"
-    //   }
-    // ],
-    // https://eslint.org/docs/latest/rules/space-before-function-paren 🔧
-    "space-before-function-paren": [
-      "error",
-      "always"
-    ],
-    "indent": [
-      "error",
-      "tab"
-    ],
-    // // https://eslint.org/docs/latest/rules/key-spacing 🔧
-    // "key-spacing": [
-    //   "error",
-    //   {
-    //     "beforeColon": false,
-    //     "afterColon": true
-    //   }
-    // ],
-    // https://eslint.org/docs/latest/rules/no-trailing-spaces 🔧
-    "no-trailing-spaces": "error",
-    // https://typescript-eslint.io/rules/no-unused-vars/ ❌
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "args": "all",
-        "argsIgnorePattern": "^_",
-        "caughtErrors": "all",
-        "caughtErrorsIgnorePattern": "^_",
-        "destructuredArrayIgnorePattern": "^_",
-        "varsIgnorePattern": "^_",
-        "ignoreRestSiblings": true
-      }
-    ],
-    // https://github.com/francoismassart/eslint-plugin-tailwindcss/blob/master/docs/rules/classnames-order.md 🔧
-    "tailwindcss/classnames-order": "error",
-    // Disable the no-unreachable rule so unreachable code is not flagged by ESLint
-    "no-unreachable": "off"
-  }
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"next/core-web-vitals",
+		"next/typescript",
+		"plugin:tailwindcss/recommended"
+	],
+	"plugins": [
+		"react",
+		"tailwindcss"
+	],
+	"rules": {
+		// https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md 🔧
+		"import/no-duplicates": "error",
+		// // https://eslint.org/docs/latest/rules/object-curly-spacing 🔧
+		// "object-curly-spacing": [
+		//   "error",
+		//   "always"
+		// ],
+		// // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-closing-bracket-location.md 🔧
+		// "react/jsx-closing-bracket-location": [
+		//   "error",
+		//   {
+		//     "nonEmpty": "after-props",
+		//     "selfClosing": "after-props"
+		//   }
+		// ],
+		// https://eslint.org/docs/latest/rules/space-before-function-paren 🔧
+		"space-before-function-paren": [
+			"error",
+			"always"
+		],
+		"indent": [
+			"error",
+			"tab"
+		],
+		// // https://eslint.org/docs/latest/rules/key-spacing 🔧
+		// "key-spacing": [
+		//   "error",
+		//   {
+		//     "beforeColon": false,
+		//     "afterColon": true
+		//   }
+		// ],
+		// https://eslint.org/docs/latest/rules/no-trailing-spaces 🔧
+		"no-trailing-spaces": "error",
+		// https://typescript-eslint.io/rules/no-unused-vars/ ❌
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"args": "all",
+				"argsIgnorePattern": "^_",
+				"caughtErrors": "all",
+				"caughtErrorsIgnorePattern": "^_",
+				"destructuredArrayIgnorePattern": "^_",
+				"varsIgnorePattern": "^_",
+				"ignoreRestSiblings": true
+			}
+		],
+		// https://github.com/francoismassart/eslint-plugin-tailwindcss/blob/master/docs/rules/classnames-order.md 🔧
+		"tailwindcss/classnames-order": "error",
+		// Disable the no-unreachable rule so unreachable code is not flagged by ESLint
+		"no-unreachable": "off"
+	}
 }

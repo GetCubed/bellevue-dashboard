@@ -21,7 +21,7 @@ export default async function LatestInvoices () {
 								className={clsx(
 									'flex flex-row items-center justify-between py-4',
 									{
-										'border-t border-overlay2': i !== 0,
+										'border-t border-overlay0': i !== 0,
 									},
 								)}>
 								<div className="flex items-center">

@@ -84,10 +84,10 @@ export default function EditInvoiceForm ({
 									type="radio"
 									value="pending"
 									defaultChecked={invoice.status === 'pending'}
-									className="size-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"/>
+									className="size-4 cursor-pointer border-base0 bg-base0 text-gray-600 focus:ring-2"/>
 								<label
 									htmlFor="pending"
-									className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-gray-100 px-3 py-1.5 text-xs font-medium text-gray-600">
+									className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-base0 px-3 py-1.5 text-xs font-medium text-gray-600">
                   Pending <ClockIcon className="size-4" />
 								</label>
 							</div>
@@ -98,10 +98,10 @@ export default function EditInvoiceForm ({
 									type="radio"
 									value="paid"
 									defaultChecked={invoice.status === 'paid'}
-									className="size-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"/>
+									className="size-4 cursor-pointer border-base0 bg-base0 text-gray-600 focus:ring-2"/>
 								<label
 									htmlFor="paid"
-									className="bg-green-500 ml-2 flex cursor-pointer items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium">
+									className="ml-2 flex cursor-pointer items-center gap-1.5 rounded-full bg-green px-3 py-1.5 text-xs font-medium">
                   Paid <CheckIcon className="size-4" />
 								</label>
 							</div>
@@ -112,7 +112,7 @@ export default function EditInvoiceForm ({
 			<div className="mt-6 flex justify-end gap-4">
 				<Link
 					href="/dashboard/invoices"
-					className="flex h-10 items-center rounded-lg bg-gray-100 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200">
+					className="flex h-10 items-center rounded-lg bg-base0 px-4 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-200">
           Cancel
 				</Link>
 				<Button type="submit">Edit Invoice</Button>
