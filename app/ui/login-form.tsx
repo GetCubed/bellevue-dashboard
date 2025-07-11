@@ -10,8 +10,6 @@ import { Button } from '@/app/ui/button';
 import { useActionState } from 'react';
 import { authenticate } from '@/app/lib/actions';
 import { useSearchParams } from 'next/navigation';
-import { cn } from '@/app/lib/cn';
-import { shimmer } from '@/app/ui/skeletons';
 
 export default function LoginForm () {
   const searchParams = useSearchParams();
