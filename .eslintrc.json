@@ -26,15 +26,15 @@
     //     "selfClosing": "after-props"
     //   }
     // ],
-    // // https://eslint.org/docs/latest/rules/space-before-function-paren 🔧
-    // "space-before-function-paren": [
-    //   "error",
-    //   "always"
-    // ],
-    // "indent": [
-    //   "error",
-    //   2
-    // ],
+    // https://eslint.org/docs/latest/rules/space-before-function-paren 🔧
+    "space-before-function-paren": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      "tab"
+    ],
     // // https://eslint.org/docs/latest/rules/key-spacing 🔧
     // "key-spacing": [
     //   "error",
