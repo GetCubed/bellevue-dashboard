@@ -10,6 +10,16 @@
 		"react",
 		"tailwindcss"
 	],
+	"overrides": [
+		{
+			"files": ["*.json"],
+			"parser": "jsonc-eslint-parser",
+			"extends": ["plugin:jsonc/recommended-with-jsonc"],
+			"rules": {
+				"jsonc/no-comments": "off"
+			}
+		}
+	],
 	"rules": {
 		// https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md 🔧
 		"import/no-duplicates": "error",
@@ -47,7 +57,7 @@
 		"no-trailing-spaces": "error",
 		// https://typescript-eslint.io/rules/no-unused-vars/ ❌
 		"@typescript-eslint/no-unused-vars": [
-			"error",
+			"warn",
 			{
 				"args": "all",
 				"argsIgnorePattern": "^_",

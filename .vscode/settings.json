@@ -36,5 +36,21 @@
   },
   "[markdown]": {
     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-  }
+  },
+
+  // === Tailwind CSS IntelliSense ===
+  "tailwindCSS.includeLanguages": {
+    "typescript": "typescript",
+    "typescriptreact": "typescriptreact",
+    "javascript": "javascript",
+    "javascriptreact": "javascriptreact"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    ["clsx\\(([^)]*)\\)", "'([^']*)'"]
+  ],
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass"
+  ]
 }
