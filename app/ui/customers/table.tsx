@@ -37,7 +37,7 @@ export default async function CustomersTable ({
 														<p>{customer.name}</p>
 													</div>
 												</div>
-												<p className="text-sm text-gray-500">
+												<p className="text-sm text-text">
 													{customer.email}
 												</p>
 											</div>

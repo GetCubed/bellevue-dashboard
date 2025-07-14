@@ -20,9 +20,16 @@
 			}
 		}
 	],
-	"rules": {
+	"rules": { 
+		// https://eslint.org/docs/latest/rules/object-curly-newline 🔧 
+		"object-curly-newline": ["error", {
+			"ObjectExpression": { "multiline": true, "minProperties": 3 },
+			"ObjectPattern": { "multiline": true, "minProperties": 3 }
+		}],
 		// https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md 🔧
 		"import/no-duplicates": "error",
+		// https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-max-props-per-line.md 🔧
+		"react/jsx-max-props-per-line": ["error", { "maximum": 3}],
 		// https://eslint.org/docs/latest/rules/object-curly-spacing 🔧
 		"object-curly-spacing": [
 		  "error",
