@@ -10,6 +10,7 @@ import { Button } from '@/app/ui/button';
 import { useActionState } from 'react';
 import { authenticate } from '@/app/lib/actions';
 import { useSearchParams } from 'next/navigation';
+import Flexbox from '@/app/ui/flexbox';
 
 export default function LoginForm () {
 	const searchParams = useSearchParams();
@@ -25,6 +26,11 @@ export default function LoginForm () {
 				<h1 className="mb-3 text-2xl">
           Please log in to continue.
 				</h1>
+				<Flexbox className="rounded-md bg-base0 p-2 text-sm">
+					Email: user@nextmail.com
+					<br />
+					Password: 123456
+				</Flexbox>
 				<div className="w-full">
 					<div>
 						<label

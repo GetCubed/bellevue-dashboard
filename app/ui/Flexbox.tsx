@@ -1,7 +1,6 @@
 import React, { ReactNode, CSSProperties } from 'react';
 import clsx from 'clsx';
 
-
 //TODO: slowly implement this reusable flexbox component app wide
 
 interface FlexboxProps {
@@ -56,7 +55,7 @@ const gapClass = (gap: string) => {
 	return `gap-${gap}`;
 };
 
-const Flexbox = ({
+export default function Flexbox ({
 	children,
 	className = '',
 	direction = 'row',
@@ -64,7 +63,7 @@ const Flexbox = ({
 	alignItems = 'stretch',
 	wrap = 'nowrap',
 	gap = '0',
-}: FlexboxProps) => {
+}: FlexboxProps) {
 	const classes = clsx(
 		'flex',
 		directionMap[direction],
@@ -81,5 +80,3 @@ const Flexbox = ({
 		</div>
 	);
 };
-
-export default Flexbox;

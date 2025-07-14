@@ -9,8 +9,24 @@ export const metadata: Metadata = {
 		template: '%s | Bellevue',
 		default: 'Bellevue',
 	},
-	description: 'The official Next.js Learn Dashboard built with App Router.',
-	metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+	description: 'Bellevue Dashboard',
+	metadataBase: new URL('https://bellevue-dashboard.vercel.app/'),
+	//opengraph image
+	openGraph: {
+		title: 'Bellevue',
+		description: 'Bellevue Dashboard',
+		url: 'https://bellevue-dashboard.vercel.app/',
+		siteName: 'Bellevue',
+		type: 'website',
+		images: [
+			{
+				url: '/opengraph-image.png',
+				width: 1200,
+				height: 630,
+				alt: 'Bellevue Open Graph Image',
+			},
+		],
+	},
 };
 
 export default function RootLayout ({
