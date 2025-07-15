@@ -23,7 +23,8 @@ export default function Form ({ customers }: { customers: CustomerField[] }) {
 			<div className="rounded-md bg-surface1 p-4 md:p-6">
 				{/* Customer Name */}
 				<div className="mb-4">
-					<label htmlFor="customer" className="mb-2 block text-sm font-medium">
+					<label htmlFor="customer"
+						className="mb-2 block text-sm font-medium">
             Choose customer
 					</label>
 					<div className="relative">
@@ -33,21 +34,26 @@ export default function Form ({ customers }: { customers: CustomerField[] }) {
 							className="peer block w-full cursor-pointer rounded-md border border-overlay0 py-2 pl-10 text-sm outline-2 placeholder:text-subtext0"
 							defaultValue=""
 							aria-describedby="customer-error">
-							<option value="" disabled>
+							<option value=""
+								disabled>
                 Select a customer
 							</option>
 							{customers.map((customer) => (
-								<option key={customer.id} value={customer.id}>
+								<option key={customer.id}
+									value={customer.id}>
 									{customer.name}
 								</option>
 							))}
 						</select>
 						<UserCircleIcon className="pointer-events-none absolute left-3 top-1/2 size-[18px] -translate-y-1/2 text-subtext0" />
 					</div>
-					<div id="customer-error" aria-live="polite" aria-atomic="true">
+					<div id="customer-error"
+						aria-live="polite"
+						aria-atomic="true">
 						{state.errors?.customerId &&
               state.errors.customerId.map((error: string) => (
-              	<p className="mt-2 text-sm text-red" key={error}>
+              	<p className="mt-2 text-sm text-red"
+              		key={error}>
               		{error}
               	</p>
               ))}
@@ -56,7 +62,8 @@ export default function Form ({ customers }: { customers: CustomerField[] }) {
 
 				{/* Invoice Amount */}
 				<div className="mb-4">
-					<label htmlFor="amount" className="mb-2 block text-sm font-medium">
+					<label htmlFor="amount"
+						className="mb-2 block text-sm font-medium">
             Choose an amount
 					</label>
 					<div className="relative mt-2 rounded-md">
@@ -71,10 +78,13 @@ export default function Form ({ customers }: { customers: CustomerField[] }) {
 								aria-describedby='ammount-error'/>
 							<CurrencyDollarIcon className="peer-focus: pointer-events-none absolute left-3 top-1/2 size-[18px] -translate-y-1/2 text-subtext0" />
 						</div>
-						<div id="ammount-error" aria-live="polite" aria-atomic="true">
+						<div id="ammount-error"
+							aria-live="polite"
+							aria-atomic="true">
 							{state.errors?.amount &&
                 state.errors.amount.map((error: string) => (
-                	<p className="mt-2 text-sm text-red" key={error}>
+                	<p className="mt-2 text-sm text-red"
+                		key={error}>
                 		{error}
                 	</p>
                 ))}
@@ -119,10 +129,13 @@ export default function Form ({ customers }: { customers: CustomerField[] }) {
 						</div>
 
 					</div>
-					<div id="status-error" aria-live="polite" aria-atomic="true">
+					<div id="status-error"
+						aria-live="polite"
+						aria-atomic="true">
 						{state.errors?.status &&
               state.errors.status.map((error: string) => (
-              	<p className="mt-2 text-sm text-red" key={error}>
+              	<p className="mt-2 text-sm text-red"
+              		key={error}>
               		{error}
               	</p>
               ))}

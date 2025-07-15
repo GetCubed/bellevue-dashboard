@@ -21,6 +21,10 @@
 		}
 	],
 	"rules": {
+		"react/jsx-max-props-per-line": [
+			"error",
+			{ "maximum": 1 }
+		],
 		// https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md 🔧
 		"import/no-duplicates": "error",
 		// https://eslint.org/docs/latest/rules/object-curly-spacing 🔧

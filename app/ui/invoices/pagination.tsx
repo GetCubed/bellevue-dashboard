@@ -35,7 +35,8 @@ function PaginationArrow ({
 	return isDisabled ? (
 		<div className={className}>{icon}</div>
 	) : (
-		<Link className={className} href={href}>
+		<Link className={className}
+			href={href}>
 			{icon}
 		</Link>
 	);
@@ -64,7 +65,8 @@ function PaginationNumber ({
 	);
 
 	return (
-		<Link className={className} href={href}>
+		<Link className={className}
+			href={href}>
 			{page}
 		</Link>
 	);

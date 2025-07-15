@@ -10,7 +10,6 @@ import { Button } from '@/app/ui/button';
 import { useActionState } from 'react';
 import { authenticate } from '@/app/lib/actions';
 import { useSearchParams } from 'next/navigation';
-import Flexbox from '@/app/ui/flexbox';
 
 export default function LoginForm () {
 	const searchParams = useSearchParams();
@@ -21,16 +20,18 @@ export default function LoginForm () {
 	);
 
 	return (
-		<form action={formAction} className="space-y-3">
+		<form
+			action={formAction}
+			className="space-y-3">
 			<div className="flex-1 rounded-lg bg-surface0 px-6 pb-4 pt-8">
 				<h1 className="mb-3 text-2xl">
           Please log in to continue.
 				</h1>
-				<Flexbox className="rounded-md bg-base0 p-2 text-sm">
+				<div className="flex rounded-md bg-base0 p-2 text-sm">
 					Email: user@nextmail.com
 					<br />
 					Password: 123456
-				</Flexbox>
+				</div>
 				<div className="w-full">
 					<div>
 						<label
@@ -68,7 +69,9 @@ export default function LoginForm () {
 						</div>
 					</div>
 				</div>
-				<input type="hidden" name="redirectTo" value={callbackUrl} />
+				<input type="hidden"
+					name="redirectTo"
+					value={callbackUrl} />
 				<Button className="mt-4 w-full bg-blue text-surface0 hover:bg-lavender"
 					aria-disabled={isPending}>
           Log in <ArrowRightIcon className="ml-auto size-5" />

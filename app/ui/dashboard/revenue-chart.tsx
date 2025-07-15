@@ -37,7 +37,8 @@ export default async function RevenueChart () {
 					</div>
 
 					{revenue.map((month) => (
-						<div key={month.month} className="flex flex-col items-center gap-2">
+						<div key={month.month}
+							className="flex flex-col items-center gap-2">
 							<div
 								className="w-full rounded-md bg-lavender"
 								style={{

@@ -1,6 +1,6 @@
-<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1240" height="630" viewBox="-20 0 1240 630" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
-  <rect width="1200" height="630" fill="#24273A"/>
+  <!-- <rect width="1200" height="630" fill="#24273A"/> -->
 
   <!-- Decorative shapes -->
   <circle cx="250" cy="400" r="220" fill="#8AADF4" opacity="0.8"/>

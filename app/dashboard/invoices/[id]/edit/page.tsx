@@ -29,7 +29,8 @@ export default async function Page (props: {
 						active: true,
 					},
 				]}/>
-			<Form invoice={invoice} customers={customers} />
+			<Form invoice={invoice}
+				customers={customers} />
 		</main>
 	);
 }
