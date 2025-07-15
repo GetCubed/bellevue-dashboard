@@ -9,10 +9,10 @@ export default function Page () {
 			<div className="flex h-20 shrink-0 items-end rounded-lg bg-blue p-4 md:h-52">
 				<BellevueLogo className='text-base0'/>
 			</div>
-			<div className="mt-4 flex grow flex-col md:flex-row">
+			<div className="mt-4 flex grow flex-col rounded-lg bg-mantle p-5 md:flex-row">
 
 				{/* login side */}
-				 <div className="flex flex-col justify-center rounded-lg bg-mantle px-6 py-10 md:w-2/5 md:px-20">
+				 <div className="flex flex-col justify-center px-6 py-10 md:w-2/5 md:px-5">
 					<p className="text-lg antialiased md:text-xl ">
 						<strong>Your dashboard</strong>
 					</p>
