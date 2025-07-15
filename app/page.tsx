@@ -12,7 +12,7 @@ export default function Page () {
 			<div className="mt-4 flex grow flex-col md:flex-row">
 
 				{/* login side */}
-				 <div className="flex flex-col justify-center rounded-lg bg-surface1 px-6 py-10 md:w-2/5 md:px-20">
+				 <div className="flex flex-col justify-center rounded-lg bg-mantle px-6 py-10 md:w-2/5 md:px-20">
 					<p className="text-lg antialiased md:text-xl ">
 						<strong>Your dashboard</strong>
 					</p>
@@ -26,7 +26,7 @@ export default function Page () {
 					</Link>
 				</div>
 				{/* image side */}
-				<div className="relative flex flex-auto border-2 border-red md:-ml-8">
+				<div className="relative flex flex-auto md:-ml-8">
 					<Image
 						objectFit='contain'
 						src="/svg/opengraph-image.svg"
@@ -34,7 +34,6 @@ export default function Page () {
 						// height={315}
 						// width={620}
 						fill
-						style={{ border: '1px solid white', zIndex: 99 }}
 					/>
 				</div>
 			</div>
